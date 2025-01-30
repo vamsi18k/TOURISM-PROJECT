@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Econ Adventures - Movie Tickets</title>
+    <link rel="stylesheet" href="movieticketstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Astro Econ Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="movie-listings">
+            <h2>Available Movies</h2>
+            <div class="movie-card">
+                <img src="movie1.jpg" alt="Movie 1 Poster">
+                <div class="movie-info">
+                    <h3>Movie Title 1</h3>
+                    <p>Genre: Action</p>
+                    <p>Duration: 120 min</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="movie2.jpg" alt="Movie 2 Poster">
+                <div class="movie-info">
+                    <h3>Movie Title 2</h3>
+                    <p>Genre: Comedy</p>
+                    <p>Duration: 90 min</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!-- Add more movie cards as needed -->
+        </section>
+        <section class="booking-form">
+            <h2>Book Your Tickets</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="movie">Movie:</label>
+                <select id="movie" name="movie" required>
+                    <option value="movie1">Movie Title 1</option>
+                    <option value="movie2">Movie Title 2</option>
+                    <!-- Add more movie options as needed -->
+                </select>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+                
+                <button type="submit">Book Tickets</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Astro Econ Adventures. All rights reserved.</p>
+    </footer>
+</body>
+</html>

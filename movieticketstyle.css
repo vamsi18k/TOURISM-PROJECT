@@ -1,0 +1,166 @@
+/* Define primary colors */
+:root {
+    --primary-color: rgb(52, 152, 219);  /* Vibrant Blue */
+    --secondary-color: rgb(231, 76, 60);  /* Bright Red */
+    --accent-color: rgb(46, 204, 113);    /* Vivid Green */
+    --background-color: rgb(236, 240, 241); /* Light Grey */
+    --text-color: rgb(44, 62, 80);         /* Dark Grey */
+    --hover-color: rgb(41, 128, 185);      /* Slightly Darker Blue */
+}
+
+/* General styles */
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.movie-listings {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.movie-listings h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.movie-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.movie-card img {
+    width: 200px;
+    height: auto;
+}
+
+.movie-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-info h3 {
+    margin: 0 0 10px;
+    color: var(--primary-color);
+}
+
+.movie-info p {
+    margin: 5px 0;
+}
+
+.movie-info button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.movie-info button:hover {
+    background-color: var(--hover-color);
+}
+
+.booking-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    margin: 10px 0 5px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: var(--hover-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
